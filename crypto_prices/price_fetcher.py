@@ -77,7 +77,7 @@ def fetch_prices(from_sym,
     :param single_call_retry_count: <int> If an error occurs, how many times should a call be retried
     :param delay_between_retry_attempts: <int> seconds to wait before retrying
     :param n_threads: <int> number of threads to parallelise the calls
-    :return:
+    :return: <pd.DataFrame> Prices data
     """
     ticks_per_call = 2000
     to_ts_list = _gen_req_ts_list(from_dt=from_date,
