@@ -15,13 +15,13 @@ pip install crypto_prices
 from datetime import datetime
 import crypto_prices.price_fetcher as pf
 
-hourly_xrp_prices = pf.fetch_prices(from_sym='XRP', 
+hourly_btc_prices = pf.fetch_prices(from_sym='BTC', 
                                     to_sym='USD',
                                     from_date=datetime(2007, 1, 1),
                                     freq='H')
 
 # If rate limit errors occur, play around with the delay and number of retry attempts
-hourly_xrp_prices = pf.fetch_prices(from_sym='XRP', 
+hourly_btc_prices = pf.fetch_prices(from_sym='BTC', 
                                     to_sym='USD',
                                     from_date=datetime(2007, 1, 1),
                                     freq='H',
